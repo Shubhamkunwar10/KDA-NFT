@@ -41,19 +41,6 @@ export default function Profile() {
             const tokenURI = await contract.tokenURI(i.tokenId);
             console.log(tokenURI)
 
-        /*
-            let meta = await axios.get(tokenURI, {
-                headers: {
-                    pinata_api_key: key,
-                    pinata_secret_api_key: secret,
-                }
-            })
-             
-        
-           console.log(meta,meta.data)
-            meta = meta.data; 
-            */
-
             let price = ethers.utils.formatUnits(i.price.toString(), 'ether');
             let item = {
                 price,

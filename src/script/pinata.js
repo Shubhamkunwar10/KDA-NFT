@@ -4,8 +4,8 @@ const FormData = require('form-data');
 
 
 //require('dotenv').config();
-const key = "1a2709f1d10eb00b4aea"
-const secret = "ae07f9453f0645ac5bcc46588b889a2ba7b14a7500952cc9dc5064b7f865456e";
+const key = "59ec047eab9b39fc5847"
+const secret = "9a712c7de1ab213da5659565298a5c0c1aec626e37df840baa00da34f23e87ae";
 
 
 export const uploadJSONToIPFS = async (JSONBody) => {

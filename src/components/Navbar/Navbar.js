@@ -43,20 +43,20 @@ function Navbar() {
         <div>
             <s.Header>
                 <s.StyledLogo alt={"logo"} id="mymainimage" src={"/config/images/logo.svg"} />
-                <s.TextTitle>Opensea</s.TextTitle>
+                <s.TextTitle>KDA</s.TextTitle>
                 <s.searchInput type="text" name="searchBar" placeholder="Search Items" />
                 
             
                 <s.StyledButton className="enableEthereumButton" onClick={connectWebsite}>Connect Wallet</s.StyledButton>
             </s.Header>
 
-            <nav class="navbar navbar-inverse">
-                <div class="container-fluid">
+            <nav className="navbar navbar-inverse">
+                <div className="container-fluid">
 
-                    <ul class="d-flex flex-row">
-                        <li class="active mr-4"><a href="/">Home</a></li>
-                        <li><a class="mr-4 " href="/profile">Profile</a></li>
-                        <li><a class="mr-4 " href="/sellnft">all NFT</a></li>
+                    <ul className="d-flex flex-row">
+                        <li className="active mr-4"><a href="/">Home</a></li>
+                        <li><a className="mr-4 " href="/profile">Profile</a></li>
+                        <li><a className="mr-4 " href="/sellnft">All DRC</a></li>
                     </ul>
 
                 </div>

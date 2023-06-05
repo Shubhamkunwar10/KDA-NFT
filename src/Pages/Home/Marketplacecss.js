@@ -152,7 +152,7 @@ export const ResponsiveWrapper = styled.div`
     padding:10px 10% 10px 5%;
   @media (min-width:1000px) {
     flex-direction: column;
-    padding:0px 25% 10px 25%;
+    padding:0px 20% 10px 20%;
   }
 `;
 
@@ -194,19 +194,53 @@ export const StyledLink = styled.a`
 export const StyledButton = styled.button`
   padding: 4px;
 
-font-size: 17px;
-font-weight:bold;
+  font-size: 17px;
+  font-weight:bold;
   cursor: pointer; 
-    background: linear-gradient(180deg,rgb(148 186 255 / 98%) 0%,rgb(13 142 233 / 96%) 70%)!important;
-    color: var(--chakra-colors-black);
-    text-transform: uppercase;
+  background: linear-gradient(180deg,rgb(148 186 255 / 98%) 0%,rgb(13 142 233 / 96%) 70%)!important;
+  color: var(--chakra-colors-black);
+  text-transform: uppercase;
 
-    
-border-radius: 16px;
-height:65px;
-margin-top:30px;
-margin-bottom:auto;
-width:200px;
+      
+  border-radius: 16px;
+  height:65px;
+  margin-top:30px;
+  margin-bottom:auto;
+  width:200px;
 
 
+`;
+
+
+
+export const AttributeContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+`;
+
+export const AttributeInput = styled.input`
+  width: 200px;
+`;
+export const AddAttributeButton = styled.button`
+  padding: 2px;
+  font-weight:bold;
+  cursor: pointer; 
+  background: linear-gradient(180deg,rgb(148 186 255 / 98%) 0%,rgb(13 142 233 / 96%) 70%)!important;
+  color: var(--chakra-colors-black);
+  text-transform: uppercase;
+
+      
+  border-radius: 10px;
+  margin-bottom:auto;
+`;
+
+export const ImageInput = styled.input`
+  width: 200px;
+  background-image: url(${props => props.imageURL});
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-left: 40px;
 `;
